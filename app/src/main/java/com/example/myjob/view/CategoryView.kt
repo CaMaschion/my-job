@@ -7,5 +7,4 @@ class CategoryView (context: Context) : ConstraintLayout(context) {
 
 
 
-
 }
