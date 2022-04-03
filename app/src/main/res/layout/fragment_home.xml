@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
     <LinearLayout
@@ -17,11 +17,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
             android:gravity="center_horizontal"
             android:text="@string/title"
             android:textColor="@color/purple_dark"
             android:textSize="25sp"
-            android:layout_marginTop="80dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -31,14 +32,15 @@
             style="@style/EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/per_month"
             android:layout_marginTop="@dimen/dimen_g"
+            android:hint="@string/per_month"
             app:shapeAppearance="@style/EditText">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"/>
+                android:inputType="number"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,14 +49,15 @@
             style="@style/EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hour_per_day"
             android:layout_marginTop="@dimen/dimen_g"
+            android:hint="@string/hour_per_day"
             app:shapeAppearance="@style/EditText">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"/>
+                android:inputType="number"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -62,11 +65,11 @@
             android:id="@+id/text_per_week"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_g"
             android:text="@string/days_per_week"
             android:textColor="@color/purple_dark"
-            android:layout_marginTop="@dimen/dimen_g"
-            android:layout_gravity="center_horizontal"/>
+            android:textSize="16sp" />
 
         <RadioGroup
             android:id="@+id/radio_group"
@@ -156,9 +159,19 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"/>
+                android:inputType="number"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_g"
+            android:background="@color/purple_light"
+            android:text="@string/btn_continue"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
