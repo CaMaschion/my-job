@@ -4,5 +4,5 @@ data class CategoryItem(
 
     val icon: String,
     val category: String,
-    val value: Int
+    val categoryValue: Int
 )

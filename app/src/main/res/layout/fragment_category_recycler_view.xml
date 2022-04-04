@@ -17,7 +17,7 @@
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             tools:itemCount="4"
-            tools:listitem="@layout/category_view" />
+            tools:listitem="@layout/category_item_view" />
 
     </FrameLayout>
 
