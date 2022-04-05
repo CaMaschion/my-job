@@ -34,5 +34,4 @@ class CategoryAdapter(private val categoryList: List<CategoryItem>) :
             labelValue.text = item.categoryValue.toString()
         }
     }
-
 }
