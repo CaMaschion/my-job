@@ -2,8 +2,8 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation2"
-    app:startDestination="@+id/navigation_home">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -14,8 +14,10 @@
             android:id="@+id/action_homeFragment_to_categoryFragment"
             app:destination="@id/categoryFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/categoryFragment"
         android:name="com.example.myjob.CategoryFragment"
-        android:label="CategoryFragment" />
+        android:label="CategoryFragment"
+        tools:layout="@layout/fragment_category_recycler_view"/>
 </navigation>

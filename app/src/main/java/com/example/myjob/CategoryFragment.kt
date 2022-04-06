@@ -11,10 +11,7 @@ import com.example.myjob.model.CategoryItem
 class CategoryFragment : Fragment(R.layout.fragment_category_recycler_view) {
 
     private lateinit var recycler: RecyclerView
-    lateinit var layoutManager: GridLayoutManager
-    lateinit var categoryAdapter: CategoryAdapter
     lateinit var categories : MutableList<CategoryItem>
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
