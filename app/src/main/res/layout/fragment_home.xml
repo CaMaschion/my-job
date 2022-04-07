@@ -12,8 +12,8 @@
         android:orientation="vertical"
         tools:context=".ui.home.HomeFragment">
 
-        <TextView
-            android:id="@+id/ambition"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/salary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -37,6 +37,7 @@
             app:shapeAppearance="@style/EditText">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_input_month"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -54,6 +55,7 @@
             app:shapeAppearance="@style/EditText">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_input_per_day"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -71,7 +73,7 @@
             android:textColor="@color/green_dark"
             android:textSize="16sp" />
 
-        <RadioGroup
+        <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,7 +147,7 @@
                 style="@style/Date.Radius"
                 android:text="07" />
 
-        </RadioGroup>
+        </androidx.appcompat.widget.AppCompatRadioButton>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_vacation"
@@ -157,6 +159,7 @@
             app:shapeAppearance="@style/EditText">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_vacation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
