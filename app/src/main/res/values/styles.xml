@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.MyJob" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/purple_light</item>
-        <item name="colorPrimaryDark">@color/purple_dark</item>
-        <item name="colorAccent">@color/purple_dark</item>
-    </style>
 
     <style name="Date.Radius" parent="TextAppearance.AppCompat">
         <item name="android:layout_width">40dp</item>
@@ -25,11 +19,9 @@
         <item name="android:layout_marginTop">@dimen/dimen_p</item>
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">@dimen/dimen_p</item>
-        <item name="boxStrokeColor">@color/purple_dark</item>
-        <item name="android:textColorHint">@color/purple_dark</item>
-        <item name="hintTextColor">@color/purple_dark</item>
-
-
+        <item name="boxStrokeColor">@color/green_dark</item>
+        <item name="android:textColorHint">@color/green_dark</item>
+        <item name="hintTextColor">@color/green_dark</item>
 
     </style>
 </resources>

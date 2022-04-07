@@ -20,7 +20,7 @@
             android:layout_marginTop="80dp"
             android:gravity="center_horizontal"
             android:text="@string/title"
-            android:textColor="@color/purple_dark"
+            android:textColor="@color/green_dark"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +68,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/dimen_g"
             android:text="@string/days_per_week"
-            android:textColor="@color/purple_dark"
+            android:textColor="@color/green_dark"
             android:textSize="16sp" />
 
         <RadioGroup
@@ -169,7 +169,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dimen_g"
-            android:background="@color/purple_light"
+            android:background="@color/green_light"
             android:text="@string/btn_continue"
             android:textColor="@color/white" />
 
