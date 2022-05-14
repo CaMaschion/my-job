@@ -21,11 +21,13 @@ class CategoryFragment : Fragment(R.layout.fragment_category_recycler_view) {
         recycler.adapter = CategoryAdapter(categories)
     }
 
-    private fun createCategories(){
+    private fun createCategories() {
         categories =  arrayListOf()
-        categories.add(CategoryItem("energy", "energia", 0))
-        categories.add(CategoryItem("food", "alimentacao", 0))
-        categories.add(CategoryItem("transport", "transporte", 0))
-        categories.add(CategoryItem("tax", "impostos", 0))
+        categories.add(CategoryItem("energy", "Energia", 0))
+        categories.add(CategoryItem("food", "Alimentacao", 0))
+        categories.add(CategoryItem("transport", "Transporte", 0))
+        categories.add(CategoryItem("tax", "Impostos", 0))
+        categories.add(CategoryItem("health", "Saude", 0))
+        categories.add(CategoryItem("material", "Material de Trabalho", 0))
     }
 }

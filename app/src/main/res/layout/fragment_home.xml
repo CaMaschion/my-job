@@ -73,7 +73,7 @@
             android:textColor="@color/green_dark"
             android:textSize="16sp" />
 
-        <androidx.appcompat.widget.AppCompatRadioButton
+        <RadioGroup
             android:id="@+id/radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,7 +147,7 @@
                 style="@style/Date.Radius"
                 android:text="07" />
 
-        </androidx.appcompat.widget.AppCompatRadioButton>
+        </RadioGroup>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_vacation"

@@ -1,5 +1,6 @@
 package com.example.myjob.adapter
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myjob.R
 import com.example.myjob.model.CategoryItem
 
-class CategoryAdapter(private val categoryList: List<CategoryItem>) :
+class CategoryAdapter(
+    private val categoryList: List<CategoryItem>):
     RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
@@ -28,10 +30,15 @@ class CategoryAdapter(private val categoryList: List<CategoryItem>) :
 
         private val labelCategory: TextView = itemView.findViewById(R.id.text_category)
         private val labelValue: TextView = itemView.findViewById(R.id.value_category)
+        private val shape: View = itemView.findViewById(R.id.shape)
+        private val background: View = itemView.findViewById(R.id.background)
 
         fun bindItem(item: CategoryItem) {
             labelCategory.text = item.category
             labelValue.text = item.categoryValue.toString()
+            when(item.category){
+                "Energia" -> background.setBackgroundColor(Color.BLACK)
+            }
         }
     }
 }

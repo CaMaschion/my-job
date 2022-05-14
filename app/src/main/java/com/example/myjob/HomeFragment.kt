@@ -12,7 +12,7 @@ import com.google.android.material.textfield.TextInputEditText
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private lateinit var buttonContinue: AppCompatButton
-    private lateinit var editTextMonth: TextInputEditText
+/*    private lateinit var editTextMonth: TextInputEditText
     private lateinit var radioButtonDayOne: RadioButton
     private lateinit var radioButtonDayTwo: RadioButton
     private lateinit var radioButtonDayThree: RadioButton
@@ -20,7 +20,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private lateinit var radioButtonDayFive: RadioButton
     private lateinit var radioButtonDaySix: RadioButton
     private lateinit var radioButtonDaySeven: RadioButton
-    private lateinit var editTextVacation: TextInputEditText
+    private lateinit var editTextVacation: TextInputEditText*/
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
