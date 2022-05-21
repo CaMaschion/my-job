@@ -31,13 +31,16 @@ class CategoryAdapter(
         private val labelCategory: TextView = itemView.findViewById(R.id.text_category)
         private val labelValue: TextView = itemView.findViewById(R.id.value_category)
         private val shape: View = itemView.findViewById(R.id.shape)
+        private val icon: View = itemView.findViewById(R.id.icon_category)
         private val background: View = itemView.findViewById(R.id.background)
 
         fun bindItem(item: CategoryItem) {
             labelCategory.text = item.category
             labelValue.text = item.categoryValue.toString()
-            when(item.category){
-                "Energia" -> background.setBackgroundColor(Color.BLACK)
+            when (item.category) {
+                "Alimentacao" -> background.setBackgroundResource(R.drawable.background_category_pink)
+                else -> background
+
             }
         }
     }
